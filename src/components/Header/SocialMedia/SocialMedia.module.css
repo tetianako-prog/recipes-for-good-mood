@@ -1,0 +1,31 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 244px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #553c8b;
+  background-color: #fff;
+}
+
+.link:hover .icon {
+  color: #9ea9f0;
+}
+
+.icon {
+  width: 32px;
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .social-media {
+    display: none;
+  }
+}

@@ -1,0 +1,149 @@
+.main-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 72px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.new-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+hr {
+  margin-bottom: 96px;
+}
+
+.col-23 {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-49 {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe {
+  background-color: #ffeafe;
+  margin-bottom: 48px;
+  flex-grow: 1;
+}
+.recipe a {
+  text-decoration: none;
+}
+
+.recipe p {
+  font-family: 'Times New Roman', sans-serif;
+  color: black;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 46px;
+
+  line-height: 1.5em;
+}
+
+.date,
+.title {
+  padding-top: 24px;
+  padding-left: 10px;
+}
+.date {
+  font-size: 14px;
+  color: #553c8b;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 14px;
+  padding-bottom: 48px;
+  color: black;
+  padding-right: 10px;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.side-image {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.central-image {
+  width: 100%;
+}
+
+/* .popular {
+  background-color: #ffeafe;
+}
+
+.popular ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+
+.popular li {
+  width: 18.5%;
+} */
+
+/*.popular li div {
+    max-width: 224px;
+  height: 224px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.popular li img {
+    
+  width: auto;
+  min-height: 100%;
+  margin: 0 auto;
+    
+}*/
+
+/* .popular li img {
+  border-radius: 50%;
+}
+
+.popular li h3 {
+  text-align: center;
+}
+
+.popular a {
+  text-decoration: none;
+} */
+
+@media (max-width: 768px) {
+  .popular li {
+    width: 43.5%;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .popular li {
+    width: 80%;
+  }
+
+  .col-23,
+  .col-49 {
+    width: 100%;
+  }
+
+  .recipe-new p {
+    display: none;
+  }
+}
