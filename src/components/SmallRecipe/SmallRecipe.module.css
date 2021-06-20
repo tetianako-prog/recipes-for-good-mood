@@ -41,6 +41,12 @@ button {
   border-style: none;
   outline: none;
 }
+
+.loader {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 .like {
   font-size: 36px;
 }

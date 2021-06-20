@@ -16,17 +16,17 @@ const LikedPage = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       <Container>
-        <h1 style={{ marginBottom: '20px' }}>Улюблене</h1>
+        <h1 style={{ marginBottom: '20px', textAlign: 'center' }}>Улюблене</h1>
       </Container>
 
       {recipes.length > 0 ? (
-        <PreviewRecipes recipes={recipes} />
+        <PreviewRecipes recipes={recipes} likes={false} />
       ) : (
         <div>Вибачте, нічого не знайдено</div>
       )}
-    </div>
+    </main>
   );
 };
 

@@ -1,3 +1,8 @@
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
 .main-title {
   text-align: center;
   margin-bottom: 50px;

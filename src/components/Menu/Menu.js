@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Menu.module.css';
 import { Link } from 'react-router-dom';
-import Container from '../components/Container/Container';
+import Container from '../Container/Container';
 import axios from 'axios';
 
 class Menu extends Component {

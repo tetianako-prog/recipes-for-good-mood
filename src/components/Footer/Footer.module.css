@@ -21,6 +21,7 @@
 
 .icon {
   width: 32px;
+  height: 32px;
   fill: currentColor;
 }
 
@@ -34,8 +35,8 @@
 .footer-flex {
   display: flex;
   align-items: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .col-66 {
@@ -49,7 +50,7 @@ footer span {
   margin-right: 23px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   footer span {
     display: none;
   }
@@ -68,4 +69,4 @@ footer span {
     justify-content: center;
     padding-top: 24px;
   }
-}
+} */

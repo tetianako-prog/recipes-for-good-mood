@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from './../components/Container/Container';
+import Container from './../Container/Container';
 import { Link } from 'react-router-dom';
 import styles from './PopularRecipes.module.css';
 
