@@ -5,6 +5,7 @@
 
 .main-title {
   text-align: center;
+  margin-top: 72px;
   margin-bottom: 50px;
 }
 .secondary-title {
@@ -117,7 +118,7 @@ span {
   line-height: 1.5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .col-26 {
     display: none;
   }
@@ -125,24 +126,30 @@ span {
     width: 100%;
   }
   .icons {
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  .icon-block {
-    width: 100%;
-    margin-bottom: 12px;
-  }
+
   .main-image {
-    height: 250px;
+    height: 350px;
   }
   .ingredients h2 {
     left: 80px;
   }
 }
+
 @media (max-width: 575px) {
+  .icon-block {
+    width: 100%;
+    margin-bottom: 12px;
+  }
   .ingredients h2 {
     left: 25px;
   }
   .ingredients ul {
     margin-left: 80px;
+  }
+  .main-image {
+    height: 250px;
   }
 }

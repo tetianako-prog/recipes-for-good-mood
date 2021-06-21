@@ -42,7 +42,7 @@ const NewRecipes = ({ recipes }) => {
                 <Link to={`/${recipe.type}/${recipe.id}`}>
                   <h3 className={styles.title}>{recipe.name}</h3>
                 </Link>
-                <p>{recipe.description}</p>
+                <p className={styles.description}>{recipe.description}</p>
               </div>
             ))}
           </div>

@@ -27,21 +27,6 @@
   align-items: center;
 }
 
-/*.popular li div {
-    max-width: 224px;
-  height: 224px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.popular li img {
-    
-  width: auto;
-  min-height: 100%;
-  margin: 0 auto;
-    
-}*/
-
 .popular li img {
   margin-bottom: 10px;
   width: 200px;
@@ -61,6 +46,7 @@
 @media (max-width: 768px) {
   .popular li {
     width: 43.5%;
+    margin-bottom: 36px;
   }
   .title {
     font-size: 20px;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
-import './Search.css';
+import styles from './Search.module.css';
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -21,10 +21,14 @@ const Search = () => {
   };
 
   return (
-    <div className="search">
-      <form name="search" onSubmit={handleSubmit}>
+    <div className={styles.search}>
+      <form
+        className={styles['search-form']}
+        name="search"
+        onSubmit={handleSubmit}
+      >
         <input
-          className="text-input"
+          className={styles['search-input']}
           type="search"
           placeholder="Пошук"
           value={searchQuery}

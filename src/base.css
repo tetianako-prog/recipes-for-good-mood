@@ -32,4 +32,5 @@ ul {
 
 main {
   flex-grow: 1;
+  padding-bottom: 48px;
 }

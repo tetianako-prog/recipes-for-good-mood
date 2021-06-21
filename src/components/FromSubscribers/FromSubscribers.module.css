@@ -1,7 +1,7 @@
 .recipe-row {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .main-title {
@@ -16,30 +16,27 @@
 }
 
 .recipe {
-  width: 23%;
+  width: calc((100% - 8 * 15px) / 4);
   background-color: #ffeafe;
-  margin-bottom: 48px;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin: 15px;
+  padding-bottom: 48px;
   position: relative;
 }
 
-.date,
-.title {
-  padding-top: 24px;
-  padding-left: 10px;
-}
 .date {
   font-size: 14px;
   color: #553c8b;
+  margin-top: 24px;
+  margin-left: 10px;
 }
 .title {
   font-size: 24px;
   font-weight: bold;
-  padding-top: 14px;
-  padding-bottom: 48px;
+  margin-top: 14px;
+
   color: black;
-  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .title:hover {
@@ -50,33 +47,22 @@
   object-fit: cover;
 }
 
-/* button {
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
-	background: transparent;
-	border-style: none;
-	outline: none;
-}
-.like {
-	
-	font-size: 30px;
+@media (max-width: 900px) {
+  .recipe {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
 
-@media(max-width: 768px) {
-	.recipe {
-
-		width: 47%;
-		margin-right: 1.5%;
-		margin-left: 1.5%;
-		
-	}
+@media (max-width: 768px) {
+  .recipe {
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 @media (max-width: 575px) {
-	.recipe {
-
-		width: 100%;
-		margin-bottom: 10px;
-		
-	}
-} */
+  .recipe {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+.vertical-menu {
+  position: fixed;
+  padding-top: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ccc1ff;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: 500ms transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  transform: translateX(0);
+  transition: 500ms transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-item a {
+  padding-left: 60px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.menu-item a:hover {
+  text-decoration: underline;
+}
+
+.close-button {
+  position: relative;
+  top: 0;
+  right: 10px;
+  z-index: 1001;
+}
+
+.close-icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+/* } */

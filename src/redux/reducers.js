@@ -21,6 +21,9 @@ import {
   fetchSearchRequest,
   fetchSearchSuccess,
   fetchSearchError,
+  fetchLikedRecipesRequest,
+  fetchLikedRecipesSuccess,
+  fetchLikedRecipesError,
 } from './actions';
 
 import { createReducer } from '@reduxjs/toolkit';
@@ -57,6 +60,10 @@ export const searchReducer = createReducer([], {
   [fetchSearchSuccess]: (_, { payload }) => payload,
 });
 
+export const likedRecipesReducer = createReducer([], {
+  [fetchLikedRecipesSuccess]: (_, { payload }) => payload,
+});
+
 export const loadingReducer = createReducer(false, {
   [fetchRecipesRequest]: () => true,
   [fetchRecipesSuccess]: () => false,
@@ -76,4 +83,7 @@ export const loadingReducer = createReducer(false, {
   [fetchSearchRequest]: () => true,
   [fetchSearchSuccess]: () => false,
   [fetchSearchError]: () => false,
+  [fetchLikedRecipesRequest]: () => true,
+  [fetchLikedRecipesSuccess]: () => false,
+  [fetchLikedRecipesError]: () => false,
 });

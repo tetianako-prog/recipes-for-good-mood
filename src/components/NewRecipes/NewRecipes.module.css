@@ -82,51 +82,13 @@ hr {
   width: 100%;
 }
 
-/* .popular {
-  background-color: #ffeafe;
-}
-
-.popular ul {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 70px;
-}
-
-.popular li {
-  width: 18.5%;
-} */
-
-/*.popular li div {
-    max-width: 224px;
-  height: 224px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.popular li img {
-    
-  width: auto;
-  min-height: 100%;
-  margin: 0 auto;
-    
-}*/
-
-/* .popular li img {
-  border-radius: 50%;
-}
-
-.popular li h3 {
-  text-align: center;
-}
-
-.popular a {
-  text-decoration: none;
-} */
-
 @media (max-width: 768px) {
-  .popular li {
-    width: 43.5%;
+  .col-49 {
+    display: none;
+  }
+
+  .col-23 {
+    width: 48%;
   }
   .title {
     font-size: 20px;
@@ -134,16 +96,15 @@ hr {
 }
 
 @media (max-width: 575px) {
-  .popular li {
-    width: 80%;
+  .col-49 {
+    display: block;
   }
-
   .col-23,
   .col-49 {
     width: 100%;
   }
 
-  .recipe-new p {
+  .description {
     display: none;
   }
 }

@@ -50,7 +50,7 @@ footer span {
   margin-right: 23px;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   footer span {
     display: none;
   }
@@ -69,4 +69,4 @@ footer span {
     justify-content: center;
     padding-top: 24px;
   }
-} */
+}

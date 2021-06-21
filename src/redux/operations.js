@@ -21,6 +21,9 @@ import {
   fetchSearchRequest,
   fetchSearchSuccess,
   fetchSearchError,
+  fetchLikedRecipesRequest,
+  fetchLikedRecipesSuccess,
+  fetchLikedRecipesError,
 } from './actions';
 
 axios.defaults.baseURL = 'https://60ae79925b8c300017dea964.mockapi.io/api';
@@ -86,5 +89,15 @@ export const fetchSearch = searchQuery => async dispatch => {
     dispatch(fetchSearchSuccess(data));
   } catch (err) {
     dispatch(fetchSearchError(err));
+  }
+};
+
+export const fetchLiked = () => async dispatch => {
+  dispatch(fetchLikedRecipesRequest());
+  try {
+    const { data } = await axios.get('/recipes?isLiked=true');
+    dispatch(fetchLikedRecipesSuccess(data));
+  } catch (err) {
+    dispatch(fetchLikedRecipesError(err));
   }
 };

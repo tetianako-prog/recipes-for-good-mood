@@ -13,3 +13,5 @@ export const youMayLike = state => state.youMayLike;
 export const loading = state => state.isLoading;
 
 export const getSearch = state => state.search;
+
+export const getLiked = state => state.likedRecipes;

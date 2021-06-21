@@ -24,9 +24,6 @@ const SearchPage = () => {
   return (
     <main>
       <Container>
-        <h1 style={{ marginBottom: '20px', textAlign: 'center' }}>
-          Результати пошуку
-        </h1>
         {isLoading ? (
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Loader
@@ -37,10 +34,23 @@ const SearchPage = () => {
               timeout={3000}
             />
           </div>
-        ) : recipes.length > 0 ? (
-          <PreviewRecipes recipes={recipes} />
         ) : (
-          <div>Вибачте, нічого не знайдено</div>
+          <>
+            <h1
+              style={{
+                marginTop: '48px',
+                marginBottom: '48px',
+                textAlign: 'center',
+              }}
+            >
+              Результати пошуку
+            </h1>
+            {recipes.length > 0 ? (
+              <PreviewRecipes recipes={recipes} />
+            ) : (
+              <div>Вибачте, нічого не знайдено</div>
+            )}
+          </>
         )}
       </Container>
     </main>

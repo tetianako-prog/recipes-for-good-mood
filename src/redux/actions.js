@@ -44,6 +44,17 @@ export const toggleLikeRequest = createAction('recipe/toggleLikeRequest');
 export const toggleLikeSuccess = createAction('recipe/toggleLikeSuccess');
 export const toggleLikeError = createAction('recipe/toggleLikeError');
 
-export const fetchSearchRequest = createAction('recipe/fetchSearchRequest');
-export const fetchSearchSuccess = createAction('recipe/fetchSearchSuccess');
-export const fetchSearchError = createAction('recipe/fetchSearchError');
+export const fetchSearchRequest = createAction('recipes/fetchSearchRequest');
+export const fetchSearchSuccess = createAction('recipes/fetchSearchSuccess');
+export const fetchSearchError = createAction('recipes/fetchSearchError');
+
+export const fetchLikedRecipesRequest = createAction(
+  'recipes/fetchLikedRecipesRequest',
+);
+
+export const fetchLikedRecipesSuccess = createAction(
+  'recipes/fetchLikedRecipesSuccess',
+);
+export const fetchLikedRecipesError = createAction(
+  'recipes/fetchLikedRecipesError',
+);

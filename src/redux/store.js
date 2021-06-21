@@ -7,6 +7,7 @@ import {
   youMayLikeReducer,
   loadingReducer,
   searchReducer,
+  likedRecipesReducer,
 } from './reducers';
 
 const middleware = [...getDefaultMiddleware()];
@@ -20,6 +21,7 @@ const store = configureStore({
     youMayLike: youMayLikeReducer,
     isLoading: loadingReducer,
     search: searchReducer,
+    likedRecipes: likedRecipesReducer,
   },
   //devTools: process.env.NODE_ENV === 'development',
   middleware,
