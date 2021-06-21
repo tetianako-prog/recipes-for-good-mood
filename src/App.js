@@ -1,13 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
+import Header from './components/Header';
 import MainPage from './views/MainPage';
-import Menu from './components/Menu/Menu';
-import CategoryPage from './views/CategoryPage/CategoryPage';
+import Menu from './components/Menu';
+import CategoryPage from './views/CategoryPage';
 import SearchPage from './views/SearchPage';
-import Recipe from './views/Recipe/Recipe';
-import Footer from './components/Footer/Footer';
-import LikedPage from './views/LikedPage/LikedPage';
+import Recipe from './views/Recipe';
+import Footer from './components/Footer';
+import LikedPage from './views/LikedPage';
 import styles from './App.module.css';
 
 function App() {

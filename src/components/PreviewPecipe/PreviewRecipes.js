@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SmallRecipe from '../SmallRecipe/SmallRecipe';
+import SmallRecipe from '../SmallRecipe';
 import Container from '../Container/Container';
 import styles from './PreviewRecipes.module.css';
 

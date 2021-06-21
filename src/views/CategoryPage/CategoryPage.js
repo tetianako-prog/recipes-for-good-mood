@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Category from '../../components/Category/Category';
-import PreviewRecipes from '../../components/PreviewPecipe/PreviewRecipes';
+import Category from '../../components/Category';
+import PreviewRecipes from '../../components/PreviewPecipe';
 import { fetchCategoryAndRecipes } from '../../redux/operations';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';

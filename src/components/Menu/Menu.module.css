@@ -30,11 +30,11 @@
   background-color: #ffeafe;
   transition: width 0.3s ease-in-out;
 }
-.link:after:first-child {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-}
 
+.active:after {
+  background-color: #9ea9f0;
+  border-radius: 5px;
+}
 .link:hover:after,
 .link:focus:after {
   background-color: #9ea9f0;

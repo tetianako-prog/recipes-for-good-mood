@@ -85,15 +85,15 @@
   width: 30%;
 }
 .icon-1:after {
-  content: url(people.png);
+  content: url(../../img/people.png);
 }
 
 .icon-2:after {
-  content: url(time.png);
+  content: url(../../img/time.png);
 }
 
 .icon-3:after {
-  content: url(preparation.png);
+  content: url(../../img/preparation.png);
 }
 .description {
   padding-left: 22px;

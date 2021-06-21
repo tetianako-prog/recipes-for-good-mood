@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import NewRecipes from './../components/NewRecipes/NewRecipes';
-import PopularRecipes from './../components/PopularRecipes/PopularRecipes';
-import FromSubscribers from './../components/FromSubscribers/FromSubscribers';
+import NewRecipes from '../../components/NewRecipes';
+import PopularRecipes from '../../components/PopularRecipes';
+import FromSubscribers from '../../components/FromSubscribers';
 import { useSelector } from 'react-redux';
-import { getAllRecipes, loading } from '../redux/selectors';
-import { fetchRecipes } from '../redux/operations';
+import { getAllRecipes, loading } from '../../redux/selectors';
+import { fetchRecipes } from '../../redux/operations';
 import { useDispatch } from 'react-redux';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import Loader from 'react-loader-spinner';
