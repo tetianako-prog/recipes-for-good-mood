@@ -21,7 +21,6 @@ const Recipe = () => {
     });
   }, [dispatch, id, category]);
   const recipe = useSelector(getOneRecipe);
-  console.log(recipe);
   const youMayLikeRecipes = useSelector(youMayLike);
   const isLoading = useSelector(loading);
 

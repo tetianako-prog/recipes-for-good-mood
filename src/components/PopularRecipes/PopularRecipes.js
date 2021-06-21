@@ -8,7 +8,6 @@ const PopularRecipes = ({ recipes }) => {
     .filter(recipe => recipe.popular)
     .sort((a, b) => Math.random() - 0.5)
     .slice(0, 4);
-  console.log(popularRecipes);
   return (
     <div>
       <Container>

@@ -12,7 +12,6 @@ const Search = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(searchQuery);
     history.push({
       pathname: '/search',
       search: `query=${searchQuery}`,

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import queryString from 'query-string';
-import axios from 'axios';
 import PreviewRecipes from '../../components/PreviewPecipe/PreviewRecipes';
 import Container from '../../components/Container/Container';
 import { useDispatch, useSelector } from 'react-redux';
@@ -48,7 +47,9 @@ const SearchPage = () => {
             {recipes.length > 0 ? (
               <PreviewRecipes recipes={recipes} />
             ) : (
-              <div>Вибачте, нічого не знайдено</div>
+              <div style={{ fontSize: '20px', textAlign: 'center' }}>
+                Вибачте, нічого не знайдено
+              </div>
             )}
           </>
         )}
