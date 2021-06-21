@@ -1,6 +1,6 @@
 .vertical-menu {
   position: fixed;
-  padding-top: 20px;
+  padding-top: 50px;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,12 +8,10 @@
   background: #ccc1ff;
   z-index: 1000;
   transform: translateX(-100%);
-  transition: 500ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
   transform: translateX(0);
-  transition: 500ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item {
